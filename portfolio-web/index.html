@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/logo192.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Portfolio | Sebastián Marroquín</title>
+</head>
+
+<body>
+    <!--
+        Header
+    -->
+    <header>
+        <a href="#" class="logo">SMM</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Acerca de mi</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Habilidades</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Portafolio</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contáctame</a></li>
+        </ul>
+    </header>
+    <!--
+        Banner section
+    -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hola, Soy <br> <span>Sebastián Marroquín</span> </h2>
+            <h3>Front-End | Machine Learning | Data Scientist</h3>
+            <a href="#about" class="btn">Acerca de mi</a>
+        </div>
+    </section>
+
+    <!--
+        About
+    -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Acerca de mi</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Front-End | Machine Learning | Data Scientist</h3>
+                <p>
+                    Soy un ingeniero de software con una verdadera pasión por el aprendizaje de nuevas tecnologías 
+                    y aplicarlas para crear un gran software. 
+                    Ultimamente, he estado aprendiendo desarrollo web, utilizando los frameworks que dominan el mercado.
+                    Mi objetivo es seguir aprendiendo nuevas tendencias en tecnología y usarlas para desarrollar proyectos prácticos 
+                    y trabajar con grandes equipos con personas emocionantes y profesionales en la industria.
+                </p>
+            </div>
+            <div class="w50">
+                <img src="./img/element1.jpg" class="img" alt="Keyboard">
+            </div>
+        </div>
+    </section>
+
+    <!--
+        Services/Technologies
+    -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Lo que hago</h2>
+            <p>
+                Estas son algunas cosas en las que me desempeño:
+            </p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="./img/webDevelop.png" alt="WebDevelopment">
+                <h2>Full Stack Developer</h2>
+                <p>
+                    Siempre busco seguir aprendiendo nuevas tendencias en desarrollo web para 
+                    crear mejores aplicaciones web.
+                </p>
+                <p>
+                    Algunos lenguajes que uso para desarrollar 
+                    aplicaciones son los siguientes:
+                </p>
+                <br>
+                <p>
+                    Javascript, Java, HTML5/CSS3, Node.js, C/C++ and SQL/NoSQL
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="./img/dataAnalysis.png" alt="DataScience">
+                <h2>Data Science</h2>
+                <p>
+                    Mi pasión siempre ha sido el aprendizaje automático. 
+                    Mi formación universitaria se baso estrictamente en aprender y mejorar 
+                    algoritmos de aprendizaje automático.
+                    Algunos de los conceptos con los que he trabajado son los siguientes:
+                </p>
+                <br>
+                <p>
+                   <ul style="list-style: none;">
+                        <li>Supervise & Unsupervised Learning</li>
+                        <li>Deep Learning</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="./img/computerScience.png" alt="ComputerScience">
+                <h2>Computer Science</h2>
+                <p>
+                    Como ingeniero de software, trabajé con conceptos, algoritmos y 
+                    patrones de diseño de ciencias de la computación y estos fueron 
+                    implementados en los proyectos que desarrollo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        Work/Portfolio
+    -->
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Algunos de mis trabajos recientes</h2>
+            <p>
+                ¿Quieres ver más? Asegúrate de revisar mis repositorios de <a target="blank" style="text-decoration: none;" href="https://github.com/SebastianMM-96/">GitHub</a>.
+            </p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx" data-text="Corona Tracker">
+                    <img src="./portfolio/CoronaTracker.png" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>CoronaTracker</h3>
+                        <p>
+                            Application developed in React.js for viewing and tracking the COVID-19.
+                        </p>
+                        <a href="https://sebastianmm-96.github.io/corona-tracker/" target="blank">Ver demo</a>
+                        <a href="https://github.com/SebastianMM-96/corona-tracker" target="blank">Ver repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx" data-text="Find your recipe">
+                    <img src="./portfolio/FindUrRecipe.png" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Find your recipe</h3>
+                        <p>
+                            Deploying an app that searches for recipes through an API.
+                            The API used for this project was obtained from: EDAMAM.
+                        </p>
+                        <a href="https://sebastianmm-96.github.io/recipe-reactapp/" target="blank">Ver demo</a>
+                        <a href="https://github.com/SebastianMM-96/recipe-reactapp" target="blank">Ver repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx" data-text="Machine Learning">
+                    <img src="./portfolio/videoGameSales.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>K-Means on VideoGame Sales</h3>
+                        <p>
+                            Se pretende mostrar los juegos más vendidos desde la perspectiva global, 
+                            y finalmente el año en que se lanzan los 1000 juegos más vendidos y sus editores.
+                        </p>
+                        <a href="https://github.com/SebastianMM-96/K-Means-on-VideoGame-Sales" target="blank">Ver repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx" data-text="Cervical Cancer Analysis">
+                    <img src="./portfolio/cervicalCancer.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>ML para el cáncer cervicouterino</h3>
+                        <p>
+                            Se propone utilizar algoritmos de Aprendizaje Automático para estimar con precisión si el paciente tiene cáncer en función 
+                            de variables objetivo.
+                        </p>
+                        <a href="https://github.com/SebastianMM-96/CervicalCancer-Machine-Learning" target="blank">Ver repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="heading">
+            <a href="https://github.com/SebastianMM-96" target="blank" class="btn">Ver más</a>
+        </div>
+        </div>
+    </section>
+
+    <!--
+        Contact
+    -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contáctame</h2>
+            <p>
+                Puedes ponerte en contacto conmigo, aquí te dejo mis datos.
+            </p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Información de contacto</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Telefono celular</h3>
+                            <p>
+                                55-34-33-1994
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>
+                                sebastian_marr_martinez@outlook.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+                Simple animation
+            -->
+            <ul>
+                <li>
+                    <a href="https://github.com/SebastianMM-96" target="blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-github-alt"></span>
+                    </a>
+                </li>
+                <li>
+                    <a target="blank" href="https://www.linkedin.com/in/sebasti%C3%A1n-de-jes%C3%BAs-marroqu%C3%ADn-mart%C3%ADnez-205626176/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                </li>
+                <li>
+                    <a target="blank" href="mailto:sebastian_marr_martinez@outlook.com/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-envelope"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2020 Sebastián Marroquín. All Rights Reserved</p>
+    </div>
+
+
+
+    <!--
+        Script
+    -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+
+    </script>
+
+</body>
+
+</html>
